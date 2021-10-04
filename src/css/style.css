@@ -42,15 +42,19 @@ h2 {
 /* Changing the button look on hover */
 button:hover,
 #add_entry_button:hover {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color: var(--black);
+  color: var(--white);
 }
 
 /* Where we input info for a new post */
 .input_fields_area {
   grid-area: input_fields;
   /* grid-template-rows: 100px; */
+}
 
+input {
+  background-color: var(--white);
+  /* color: var(--red); */
 }
 
 /* The display of all posts that exist */
@@ -67,7 +71,7 @@ button:hover,
   /* grid-template-rows: auto; */
   grid-template-rows: 100px 0.3fr 0.55fr;
   grid-template-areas:
-  ". header_bar ."
-  ". input_fields ."
+    ". header_bar ."
+    ". input_fields ."
     ". post_headers .";
 }
