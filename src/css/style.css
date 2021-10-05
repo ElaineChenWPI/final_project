@@ -40,8 +40,7 @@ h2 {
 }
 
 /* Changing the button look on hover */
-button:hover,
-#add_entry_button:hover {
+button:hover {
   background-color: var(--black);
   color: var(--white);
 }
@@ -52,7 +51,54 @@ button:hover,
   /* grid-template-rows: 100px; */
 }
 
-input {
+.input_field_item {
+  width: 100%;
+}
+
+.post_entry_table {
+  width: 100%;
+}
+
+.post_entry_container {
+  /* width: 100%; */
+  background-color: var(--white);
+  border: 3px solid var(--black);
+  margin: 0px;
+  padding: 0px;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.post_entry_title {
+  width: 60%;
+  background-color: var(--white);
+  border: 3px solid var(--black);
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+.post_entry_date {
+  width: 20%;
+  background-color: var(--white);
+  border: 3px solid var(--black);
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  /* text-align: right; */
+  margin: 0px;
+  padding: 0px;
+}
+
+.post_entry_body {
+  width: 100%;
+  background-color: var(--white);
+  border: 3px solid var(--black);
+}
+
+input,
+textarea {
   background-color: var(--white);
   /* color: var(--red); */
 }
@@ -60,7 +106,6 @@ input {
 /* The display of all posts that exist */
 .post_headers_area {
   grid-area: post_headers;
-  text-align: center;
 }
 
 /* Setting the grid layout of the entire dashboard web page */

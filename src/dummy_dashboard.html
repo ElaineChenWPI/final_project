@@ -20,27 +20,49 @@
         <button>Logout</button>
       </div>
       <div class="input_fields_area">
-        <h1>Pretend I am in the input area</h1>
-        <input type="text" placeholder="Enter Name Here" />
+        <h1>Create New Post</h1>
+        <ul>
+          <li class="input_field_item">
+            <label for="title_input">Post Title</label>
+            <input
+              class="input_field_item"
+              name="title_input"
+              type="text"
+              placeholder="Enter Post Title Here"
+            />
+          </li>
+          <li class="input_field_item">
+            <label for="description_input">Post Description</label>
+            <textarea
+              name="description_input"
+              class="input_field_item"
+              name="title_input"
+              type="text"
+              placeholder="Enter Post Description Here"
+            ></textarea>
+          </li>
+          <li class="input_field_item">
+            <label for="title_input">Post Title</label>
+            <input
+              class="input_field_item"
+              name="title_input"
+              type="text"
+              placeholder="Enter Name Here"
+            />
+          </li>
+        </ul>
       </div>
       <div class="post_headers_area">
-        <ul>
-          <li><h1>Filler</h1></li>
-          <li><h1>Filler</h1></li>
-          <li><h1>Filler</h1></li>
-          <li><h1>Filler</h1></li>
-          <li><h1>Filler</h1></li>
-          <li><h1>Filler</h1></li>
-          <li><h1>Filler</h1></li>
-          <li><h1>Filler</h1></li>
-          <li><h1>Filler</h1></li>
-          <li><h1>Filler</h1></li>
-          <li><h1>Filler</h1></li>
-          <li><h1>Filler</h1></li>
-          <li><h1>Filler</h1></li>
-          <li><h1>Filler</h1></li>
-          <li><h1>Filler</h1></li>
-        </ul>
+        <h1>Posts</h1>
+        <table class="post_entry_table">
+          <tr class="post_entry_container">
+            <td class="post_entry_container">
+              <div class="post_entry_title">Post Item Title</div>
+              <div class="post_entry_date">Post Item Date</div>
+              <div class="post_entry_body">Post Item Description</div>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </body>
